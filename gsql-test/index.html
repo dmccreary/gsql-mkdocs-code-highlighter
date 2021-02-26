@@ -14,7 +14,7 @@
     
     
       
-        <title>GSQL - Mkdocs Code Highlighter</title>
+        <title>GSQL - GSQL Mkdocs Code Highlighter</title>
       
     
     
@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#gsql-syntax-highlighting-test" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -70,7 +75,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href=".." title="Mkdocs Code Highlighter" class="md-header-nav__button md-logo" aria-label="Mkdocs Code Highlighter">
+    <a href=".." title="GSQL Mkdocs Code Highlighter" class="md-header-nav__button md-logo" aria-label="GSQL Mkdocs Code Highlighter">
       
   <img src="../img/logo.png" alt="logo">
 
@@ -82,7 +87,7 @@
       <div class="md-header-nav__ellipsis">
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
-            Mkdocs Code Highlighter
+            GSQL Mkdocs Code Highlighter
           </span>
         </div>
         <div class="md-header-nav__topic">
@@ -162,12 +167,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Mkdocs Code Highlighter" class="md-nav__button md-logo" aria-label="Mkdocs Code Highlighter">
+    <a href=".." title="GSQL Mkdocs Code Highlighter" class="md-nav__button md-logo" aria-label="GSQL Mkdocs Code Highlighter">
       
   <img src="../img/logo.png" alt="logo">
 
     </a>
-    Mkdocs Code Highlighter
+    GSQL Mkdocs Code Highlighter
   </label>
   
     <div class="md-nav__source">
@@ -243,10 +248,55 @@
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          GSQL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         GSQL
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#test-1" class="md-nav__link">
+    Test 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-2" class="md-nav__link">
+    Test 2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pagerank-test" class="md-nav__link">
+    PageRank Test
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -289,6 +339,51 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#test-1" class="md-nav__link">
+    Test 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-2" class="md-nav__link">
+    Test 2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pagerank-test" class="md-nav__link">
+    PageRank Test
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -299,9 +394,64 @@
                   </a>
                 
                 
-                  <h1>GSQL</h1>
-                
-                
+                <h1 id="gsql-syntax-highlighting-test">GSQL Syntax Highlighting Test</h1>
+<h2 id="test-1">Test 1</h2>
+<div class="highlight"><pre><span></span><code><span class="k">CREATE</span> <span class="n">QUERY</span> <span class="n">countPeople</span><span class="p">()</span> <span class="k">FOR</span> <span class="n">GRAPH</span> <span class="n">Friends</span> <span class="err">{</span> 
+    <span class="cm">/* Initialize Seed */</span> 
+    <span class="n">people</span> <span class="o">=</span> <span class="err">{</span><span class="n">Person</span><span class="p">.</span><span class="o">*</span><span class="err">}</span><span class="p">;</span>
+    <span class="cm">/* How many people vertices are there in the entire graph? */</span>
+    <span class="n">PRINT</span> <span class="n">people</span><span class="p">.</span><span class="k">size</span><span class="p">();</span>
+<span class="err">}</span>
+</code></pre></div>
+<h2 id="test-2">Test 2</h2>
+<div class="highlight"><pre><span></span><code><span class="k">CREATE</span> <span class="n">QUERY</span> <span class="n">topCoLiked</span><span class="p">(</span> <span class="n">vertex</span><span class="o">&lt;</span><span class="k">User</span><span class="o">&gt;</span> <span class="n">input_user</span><span class="p">,</span>  <span class="nb">INT</span> <span class="n">topk</span><span class="p">)</span> <span class="k">FOR</span> <span class="n">GRAPH</span> <span class="n">gsql_demo</span>
+<span class="err">{</span>
+  <span class="n">SumAccum</span><span class="o">&lt;</span><span class="nb">int</span><span class="o">&gt;</span>  <span class="o">@</span><span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="o">#</span> <span class="o">@</span><span class="n">cnt</span> <span class="k">is</span> <span class="n">a</span> <span class="n">runtime</span> <span class="n">attribute</span> <span class="k">to</span> <span class="n">be</span> <span class="n">associated</span> <span class="k">with</span> <span class="k">each</span> <span class="k">User</span> <span class="n">vertex</span>
+  <span class="o">#</span> <span class="k">to</span> <span class="n">record</span> <span class="n">how</span> <span class="n">many</span> <span class="n">times</span> <span class="n">a</span> <span class="k">user</span> <span class="k">is</span> <span class="n">liked</span><span class="p">.</span>
+    <span class="n">L0</span> <span class="o">=</span> <span class="err">{</span><span class="n">input_user</span><span class="err">}</span><span class="p">;</span>
+    <span class="n">L1</span> <span class="o">=</span> <span class="k">SELECT</span> <span class="n">tgt</span>
+        <span class="k">FROM</span> <span class="n">L0</span><span class="o">-</span><span class="p">(</span><span class="n">Liked_By</span><span class="p">)</span><span class="o">-&gt;</span><span class="k">User</span><span class="p">:</span><span class="n">tgt</span><span class="p">;</span>
+    <span class="n">L2</span> <span class="o">=</span>  <span class="k">SELECT</span> <span class="n">tgt</span>
+          <span class="k">FROM</span> <span class="n">L1</span><span class="o">-</span><span class="p">(</span><span class="n">Liked</span><span class="p">)</span><span class="o">-&gt;</span><span class="p">:</span><span class="n">tgt</span>
+          <span class="k">WHERE</span>  <span class="n">tgt</span> <span class="o">!=</span> <span class="n">input_user</span>
+          <span class="n">ACCUM</span> <span class="n">tgt</span><span class="p">.</span><span class="o">@</span><span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
+          <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">tgt</span><span class="p">.</span><span class="o">@</span><span class="n">cnt</span> <span class="k">DESC</span>
+          <span class="k">LIMIT</span> <span class="n">topk</span><span class="p">;</span>
+  <span class="n">PRINT</span> <span class="n">L2</span><span class="p">;</span>
+<span class="err">}</span>
+</code></pre></div>
+<h2 id="pagerank-test">PageRank Test</h2>
+<div class="highlight"><pre><span></span><code><span class="k">CREATE</span> <span class="n">QUERY</span> <span class="n">pageRank</span> <span class="p">(</span><span class="nb">float</span> <span class="n">maxChange</span><span class="p">,</span> <span class="nb">int</span> <span class="n">maxIteration</span><span class="p">,</span> <span class="nb">float</span> <span class="n">dampingFactor</span><span class="p">)</span>
+<span class="k">FOR</span> <span class="n">GRAPH</span> <span class="n">gsql_demo</span>
+<span class="err">{</span>
+  <span class="o">#</span> <span class="k">In</span> <span class="k">each</span> <span class="n">iteration</span><span class="p">,</span> <span class="n">compute</span> <span class="n">a</span> <span class="n">score</span> <span class="k">for</span> <span class="k">each</span> <span class="n">vertex</span><span class="p">:</span>
+  <span class="o">#</span>   <span class="n">score</span> <span class="o">=</span> <span class="n">dampingFactor</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">dampingFactor</span><span class="p">)</span><span class="o">*</span> <span class="k">sum</span><span class="p">(</span><span class="n">received</span> <span class="n">scores</span> <span class="k">from</span> <span class="n">its</span> <span class="n">neighbors</span><span class="p">).</span>
+  <span class="o">#</span> <span class="n">The</span> <span class="n">pageRank</span> <span class="n">algorithm</span> <span class="n">stops</span> <span class="k">when</span> <span class="n">either</span> <span class="k">of</span> <span class="n">the</span> <span class="n">following</span> <span class="k">is</span> <span class="k">true</span><span class="p">:</span>
+  <span class="o">#</span>  <span class="n">a</span><span class="p">)</span> <span class="n">it</span> <span class="n">reaches</span> <span class="n">maxIterations</span> <span class="n">iterations</span><span class="p">;</span>
+  <span class="o">#</span>  <span class="n">b</span><span class="p">)</span> <span class="k">max</span> <span class="n">score</span> <span class="n">difference</span> <span class="k">of</span> <span class="k">any</span> <span class="n">vertex</span> <span class="n">compared</span> <span class="k">to</span> <span class="n">the</span> <span class="k">last</span> <span class="n">iteration</span> <span class="o">&lt;=</span> <span class="n">maxChange</span><span class="p">.</span>
+  <span class="o">#</span>   <span class="o">@@</span> <span class="k">prefix</span> <span class="n">means</span> <span class="n">a</span> <span class="k">global</span> <span class="n">accumulator</span><span class="p">;</span>
+  <span class="o">#</span>   <span class="o">@</span> <span class="k">prefix</span> <span class="n">means</span> <span class="n">an</span> <span class="n">individual</span> <span class="n">accumulator</span> <span class="n">associated</span> <span class="k">with</span> <span class="k">each</span> <span class="n">vertex</span>
+
+  <span class="n">MaxAccum</span><span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span> <span class="o">@@</span><span class="n">maxDifference</span> <span class="o">=</span> <span class="mi">9999</span><span class="p">;</span> <span class="o">#</span> <span class="k">max</span> <span class="n">score</span> <span class="n">change</span> <span class="k">in</span> <span class="n">an</span> <span class="n">iteration</span>
+  <span class="n">SumAccum</span><span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span> <span class="o">@</span><span class="n">received_score</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="o">#</span> <span class="k">sum</span> <span class="k">of</span> <span class="n">scores</span> <span class="k">each</span> <span class="n">vertex</span> <span class="n">receives</span> <span class="k">from</span> <span class="n">neighbors</span>
+  <span class="n">SumAccum</span><span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span> <span class="o">@</span><span class="n">score</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>   <span class="o">#</span> <span class="n">initial</span> <span class="n">score</span> <span class="k">for</span> <span class="k">every</span> <span class="n">vertex</span> <span class="k">is</span> <span class="mi">1</span><span class="p">.</span>
+
+  <span class="n">AllV</span> <span class="o">=</span> <span class="err">{</span><span class="n">Page</span><span class="p">.</span><span class="o">*</span><span class="err">}</span><span class="p">;</span>   <span class="o">#</span>  <span class="k">Start</span> <span class="k">with</span> <span class="k">all</span> <span class="n">vertices</span> <span class="k">of</span> <span class="k">type</span> <span class="n">Page</span>
+  <span class="n">WHILE</span> <span class="o">@@</span><span class="n">maxDifference</span> <span class="o">&gt;</span> <span class="n">maxChange</span> <span class="k">LIMIT</span> <span class="n">maxIteration</span> <span class="k">DO</span>
+    <span class="o">@@</span><span class="n">maxDifference</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">S</span> <span class="o">=</span> <span class="k">SELECT</span> <span class="n">s</span>
+         <span class="k">FROM</span> <span class="n">AllV</span><span class="p">:</span><span class="n">s</span><span class="o">-</span><span class="p">(</span><span class="n">Linkto</span><span class="p">)</span><span class="o">-&gt;</span><span class="p">:</span><span class="n">t</span>
+         <span class="n">ACCUM</span> <span class="n">t</span><span class="p">.</span><span class="o">@</span><span class="n">received_score</span> <span class="o">+=</span> <span class="n">s</span><span class="p">.</span><span class="o">@</span><span class="n">score</span><span class="o">/</span><span class="n">s</span><span class="p">.</span><span class="n">outdegree</span><span class="p">()</span>
+         <span class="n">POST</span><span class="o">-</span><span class="n">ACCUM</span> <span class="n">s</span><span class="p">.</span><span class="o">@</span><span class="n">score</span> <span class="o">=</span> <span class="n">dampingFactor</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">dampingFactor</span><span class="p">)</span> <span class="o">*</span> <span class="n">s</span><span class="p">.</span><span class="o">@</span><span class="n">received_score</span><span class="p">,</span>
+                    <span class="n">s</span><span class="p">.</span><span class="o">@</span><span class="n">received_score</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+                    <span class="o">@@</span><span class="n">maxDifference</span> <span class="o">+=</span>   <span class="k">abs</span><span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="o">@</span><span class="n">score</span> <span class="o">-</span> <span class="n">s</span><span class="p">.</span><span class="o">@</span><span class="n">score</span><span class="err">&#39;</span><span class="p">);</span>
+    <span class="n">PRINT</span> <span class="o">@@</span><span class="n">maxDifference</span><span class="p">;</span> <span class="o">#</span> <span class="n">print</span> <span class="k">to</span> <span class="k">default</span> <span class="n">json</span> <span class="k">result</span>
+  <span class="k">END</span><span class="p">;</span> <span class="o">#</span> <span class="k">end</span> <span class="n">while</span> <span class="n">loop</span>
+  <span class="o">#</span><span class="n">PRINT</span> <span class="n">AllV</span><span class="p">.</span><span class="n">page_id</span><span class="p">,</span> <span class="n">AllV</span><span class="p">.</span><span class="o">@</span><span class="n">score</span><span class="p">;</span>       <span class="o">#</span> <span class="n">print</span> <span class="n">the</span> <span class="n">results</span><span class="p">,</span> <span class="n">JSON</span> <span class="k">output</span> <span class="n">API</span> <span class="k">version</span> <span class="n">v1</span>
+  <span class="n">PRINT</span> <span class="n">AllV</span><span class="p">[</span><span class="n">AllV</span><span class="p">.</span><span class="n">page_id</span><span class="p">,</span> <span class="n">AllV</span><span class="p">.</span><span class="o">@</span><span class="n">score</span><span class="p">];</span>  <span class="o">#</span> <span class="n">print</span> <span class="n">the</span> <span class="n">results</span><span class="p">,</span> <span class="n">JSON</span> <span class="k">output</span> <span class="n">API</span> <span class="k">version</span> <span class="n">v2</span>
+<span class="err">}</span> <span class="o">#</span> <span class="k">end</span> <span class="n">query</span>
+</code></pre></div>
                 
               
               

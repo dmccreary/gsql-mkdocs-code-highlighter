@@ -14,7 +14,7 @@
     
     
       
-        <title>Python Test - Mkdocs Code Highlighter</title>
+        <title>Python Test - GSQL Mkdocs Code Highlighter</title>
       
     
     
@@ -75,7 +75,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href=".." title="Mkdocs Code Highlighter" class="md-header-nav__button md-logo" aria-label="Mkdocs Code Highlighter">
+    <a href=".." title="GSQL Mkdocs Code Highlighter" class="md-header-nav__button md-logo" aria-label="GSQL Mkdocs Code Highlighter">
       
   <img src="../img/logo.png" alt="logo">
 
@@ -87,7 +87,7 @@
       <div class="md-header-nav__ellipsis">
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
-            Mkdocs Code Highlighter
+            GSQL Mkdocs Code Highlighter
           </span>
         </div>
         <div class="md-header-nav__topic">
@@ -167,12 +167,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Mkdocs Code Highlighter" class="md-nav__button md-logo" aria-label="Mkdocs Code Highlighter">
+    <a href=".." title="GSQL Mkdocs Code Highlighter" class="md-nav__button md-logo" aria-label="GSQL Mkdocs Code Highlighter">
       
   <img src="../img/logo.png" alt="logo">
 
     </a>
-    Mkdocs Code Highlighter
+    GSQL Mkdocs Code Highlighter
   </label>
   
     <div class="md-nav__source">
@@ -323,68 +323,68 @@
                 
                 
                 <h1 id="test-of-python-code-highlighting">Test of Python Code Highlighting</h1>
-<pre><code class="language-py"># Statements
-from __future__ import with_statement  # Import
-from sys import path as thing
+<div class="highlight"><pre><span></span><code><span class="c1"># Statements</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">with_statement</span>  <span class="c1"># Import</span>
+<span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">path</span> <span class="k">as</span> <span class="n">thing</span>
 
-print(thing)
+<span class="nb">print</span><span class="p">(</span><span class="n">thing</span><span class="p">)</span>
 
-assert True  # keyword
-
-
-def foo():  # function definition
-    return []
+<span class="k">assert</span> <span class="kc">True</span>  <span class="c1"># keyword</span>
 
 
-class Bar(object):  # Class definition
-    def __enter__(self):
-        pass
+<span class="k">def</span> <span class="nf">foo</span><span class="p">():</span>  <span class="c1"># function definition</span>
+    <span class="k">return</span> <span class="p">[]</span>
 
-    def __exit__(self, *args):
-        pass
 
-foo()  # UNCOLOURED: function call
-while False:  # 'while'
-    continue
-for x in foo():  # 'for'
-    break
-with Bar() as stuff:
-    pass
-if False:
-    pass  # 'if'
-elif False:
-    pass
-else:
-    pass
+<span class="k">class</span> <span class="nc">Bar</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>  <span class="c1"># Class definition</span>
+    <span class="k">def</span> <span class="fm">__enter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
 
-# Constants
-'single-quote', u'unicode'  # Strings of all kinds; prefixes not highlighted
-&quot;double-quote&quot;
-&quot;&quot;&quot;triple double-quote&quot;&quot;&quot;
-'''triple single-quote'''
-r'raw'
-ur'unicode raw'
-'escape\n'
-'\04'  # octal
-'\xFF'  # hex
-'\u1111'  # unicode character
-1  # Integral
-1L
-1.0  # Float
-.1
-1+2j  # Complex
+    <span class="k">def</span> <span class="fm">__exit__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+        <span class="k">pass</span>
 
-# Expressions
-1 and 2 or 3  # Boolean operators
-2 &lt; 3  # UNCOLOURED: comparison operators
-spam = 42  # UNCOLOURED: assignment
-2 + 3  # UNCOLOURED: number operators
-[]  # UNCOLOURED: list
-{}  # UNCOLOURED: dict
-(1,)  # UNCOLOURED: tuple
-all  # Built-in functions
-GeneratorExit  # Exceptions
-</code></pre>
+<span class="n">foo</span><span class="p">()</span>  <span class="c1"># UNCOLOURED: function call</span>
+<span class="k">while</span> <span class="kc">False</span><span class="p">:</span>  <span class="c1"># &#39;while&#39;</span>
+    <span class="k">continue</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">foo</span><span class="p">():</span>  <span class="c1"># &#39;for&#39;</span>
+    <span class="k">break</span>
+<span class="k">with</span> <span class="n">Bar</span><span class="p">()</span> <span class="k">as</span> <span class="n">stuff</span><span class="p">:</span>
+    <span class="k">pass</span>
+<span class="k">if</span> <span class="kc">False</span><span class="p">:</span>
+    <span class="k">pass</span>  <span class="c1"># &#39;if&#39;</span>
+<span class="k">elif</span> <span class="kc">False</span><span class="p">:</span>
+    <span class="k">pass</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+<span class="c1"># Constants</span>
+<span class="s1">&#39;single-quote&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;unicode&#39;</span>  <span class="c1"># Strings of all kinds; prefixes not highlighted</span>
+<span class="s2">&quot;double-quote&quot;</span>
+<span class="sd">&quot;&quot;&quot;triple double-quote&quot;&quot;&quot;</span>
+<span class="sd">&#39;&#39;&#39;triple single-quote&#39;&#39;&#39;</span>
+<span class="sa">r</span><span class="s1">&#39;raw&#39;</span>
+<span class="n">ur</span><span class="s1">&#39;unicode raw&#39;</span>
+<span class="s1">&#39;escape</span><span class="se">\n</span><span class="s1">&#39;</span>
+<span class="s1">&#39;</span><span class="se">\04</span><span class="s1">&#39;</span>  <span class="c1"># octal</span>
+<span class="s1">&#39;</span><span class="se">\xFF</span><span class="s1">&#39;</span>  <span class="c1"># hex</span>
+<span class="s1">&#39;</span><span class="se">\u1111</span><span class="s1">&#39;</span>  <span class="c1"># unicode character</span>
+<span class="mi">1</span>  <span class="c1"># Integral</span>
+<span class="mi">1</span><span class="n">L</span>
+<span class="mf">1.0</span>  <span class="c1"># Float</span>
+<span class="o">.</span><span class="mi">1</span>
+<span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="n">j</span>  <span class="c1"># Complex</span>
+
+<span class="c1"># Expressions</span>
+<span class="mi">1</span> <span class="ow">and</span> <span class="mi">2</span> <span class="ow">or</span> <span class="mi">3</span>  <span class="c1"># Boolean operators</span>
+<span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">3</span>  <span class="c1"># UNCOLOURED: comparison operators</span>
+<span class="n">spam</span> <span class="o">=</span> <span class="mi">42</span>  <span class="c1"># UNCOLOURED: assignment</span>
+<span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span>  <span class="c1"># UNCOLOURED: number operators</span>
+<span class="p">[]</span>  <span class="c1"># UNCOLOURED: list</span>
+<span class="p">{}</span>  <span class="c1"># UNCOLOURED: dict</span>
+<span class="p">(</span><span class="mi">1</span><span class="p">,)</span>  <span class="c1"># UNCOLOURED: tuple</span>
+<span class="nb">all</span>  <span class="c1"># Built-in functions</span>
+<span class="ne">GeneratorExit</span>  <span class="c1"># Exceptions</span>
+</code></pre></div>
                 
               
               
