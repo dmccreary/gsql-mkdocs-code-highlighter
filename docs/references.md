@@ -6,17 +6,21 @@
 ## Python Markdown Code Hilite Extesnion for Mkdocs
 [Python Markdown Code Hilite](https://python-markdown.github.io/extensions/code_hilite/) -The CodeHilite extension adds code/syntax highlighting to standard Python-Markdown code blocks using Pygments.
 
-## Pygments Python Syntax Highlighter
+## Pygments Lexers
+### Pygments Python Syntax Highlighter
 [https://pygments.org/](https://pygments.org/)
 
-## Pygments Styles
+### Pygments Styles
 [https://pygments.org/docs/styles/](https://pygments.org/docs/styles/)
 
-## Pygments Demo
+### Pygments Demo
 [Pygments Demo](https://pygments.org/demo/)
 
-## Pygments Lexers for Graph Query Languages
+### Pygments Lexers for Graph Query Languages
 [Pygments Lexers for Graph Query Languages](https://github.com/pygments/pygments/blob/master/pygments/lexers/graph.py)
+
+### Pygments Lexers for SQL
+[Pygment Lexer for SQL](https://github.com/pygments/pygments/blob/master/pygments/lexers/sql.py)
 
 ## VIM GSQL Lexer by Josh Meekhof
 [Josh Meekhof's GSQL Syntax Highlighter for VIM](https://github.com/jmeekhof/gsql-vim/blob/master/syntax/gsql.vim)
