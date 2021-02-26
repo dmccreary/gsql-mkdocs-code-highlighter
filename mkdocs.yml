@@ -1,0 +1,22 @@
+site_name: Mkdocs Code Highlighter
+nav:
+  - Home: index.md
+  - Python Test: python-test.md
+  - SQL Test: sql-test.md
+  - GSQL: gsql-test.md
+  - References: references.md
+  - Contact: contact.md
+repo_name: 'go to github'
+repo_url: 'https://github.com/dmccreary/gsql-mkdocs-code-highlighter'
+
+edit_uri: 'blob/master/docs'
+theme:
+  name: material
+  palette:
+    primary: 'orange'
+    accent: 'blue'
+  favicon: img/favicon.ico
+  logo: img/logo.png
+markdown_extensions:
+  - pymdownx.highlight:
+      linenums: true
